@@ -1,0 +1,77 @@
+h1 {
+  margin-top: 50px;
+}
+
+a.resumeButton {
+  display: inline-block;
+  padding: 10px 18px;
+  background: #4caf50;
+  color: rgb(255, 255, 255); /* textcolor*/
+  border-radius: 6px; /* rounded corners*/
+  text-decoration: none; /*removes underline*/
+  font-weight: bold; /*make text bold*/
+}
+
+body {
+  background-color: rgb(255, 255, 255);
+}
+
+a.resumeButton:hover {
+  background: #45a049;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/*.myname {
+  background-color: rgba(0, 0, 0, 0.182);
+  padding: 0.25rem 0.5rem;
+  display: inline-block; /*Set to content width
+  border-radius: 3px;
+  border-width: 10px;
+}
+  */
+
+/* center just the name heading */
+.myname {
+  font-weight: normal;
+  font-size: 2.8rem;
+  margin: 0;
+}
+
+.selfie {
+  width: 150px;
+  height: auto;
+  border-radius: 80px;
+}
+
+.profile {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  border-radius: 5px;
+  border: 2px solid #000;
+  width: fit-content;
+  padding: 15px;
+  margin-left: 20px;
+  margin-top: 30px;
+  margin-right: auto;
+}
+
+.profile-text {
+  display: flex;
+  flex-direction: column;
+}
+
+.profile_school {
+  margin: 5px 0 0;
+  font-size: 1.1rem;
+  color: #2b00ab;
+  text-align: center;
+}
+
+.profile_major {
+  margin: 8px;
+  font-style: italic;
+  font-size: 1rem;
+  color: #000000;
+  text-align: center;
+}
