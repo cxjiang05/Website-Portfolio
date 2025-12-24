@@ -3,7 +3,7 @@ h1 {
 }
 
 a.resumeButton {
-  display: inline-block;
+  display: block;
   padding: 10px 18px;
   background: #41a2c8;
   color: rgb(255, 255, 255); /* textcolor*/
@@ -11,15 +11,39 @@ a.resumeButton {
   text-decoration: none; /*removes underline*/
   font-weight: bold; /*make text bold*/
   margin: 20px auto;
+
+  width: fit-content;
+  font-size: 14px;
+}
+.socialImg {
+  width: 30px;
+  height: 30px;
+  margin: 0 10px;
 }
 
 body {
   background-color: rgb(255, 255, 255);
 }
 
+.paragraphs {
+  text-align: center;
+  margin: 0 auto;
+  max-width: 700px;
+  margin-bottom: 0px;
+  font-size: 15px;
+}
+
 .section-title {
-  font-size: 30px;
-  margin-bottom: 20px;
+  font-size: 35px;
+  margin-bottom: 15px;
+  text-align: center;
+  color: #333;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.subsection-title {
+  font-size: 15px;
+  margin-bottom: 15px;
   text-align: center;
   color: #333;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
@@ -30,6 +54,10 @@ a.resumeButton:hover {
   font-family: Arial, Helvetica, sans-serif;
 }
 
+.section {
+  margin: 50px auto 250px auto;
+  max-width: 900px;
+}
 /*.myname {
   background-color: rgba(0, 0, 0, 0.182);
   padding: 0.25rem 0.5rem;
@@ -100,6 +128,7 @@ body {
 .timeline {
   position: relative;
   max-width: 750px;
+  min-width: 630px;
   margin: 0 auto;
 }
 
@@ -117,7 +146,7 @@ body {
 
 /* Container around content */
 .container {
-  padding: 10px 40px;
+  padding: 10px 30px;
   position: relative;
   background-color: inherit;
   width: 50%;
@@ -155,7 +184,7 @@ body {
   top: 22px;
   width: 0;
   z-index: 1;
-  right: 30px;
+  right: -10px;
   border: medium solid white;
   border-width: 10px 0 10px 10px;
   border-color: transparent transparent transparent white;
@@ -169,7 +198,7 @@ body {
   top: 22px;
   width: 0;
   z-index: 1;
-  left: 30px;
+  left: -10px;
   border: medium solid white;
   border-width: 10px 10px 10px 0;
   border-color: transparent white transparent transparent;
@@ -182,19 +211,19 @@ body {
 
 /* The actual content */
 .content {
-  padding: 10px 20px;
+  padding: 10px 30px;
   background-color: rgb(178, 219, 255);
   position: relative;
-  border-radius: 6px;
-  font-size: 10px;
+  border-radius: 30px;
+  font-size: 13px;
 }
 
 .education {
   padding: 10px 20px;
   background-color: rgb(184, 178, 255);
   position: relative;
-  border-radius: 6px;
-  font-size: 10px;
+  border-radius: 30px;
+  font-size: 13px;
 }
 
 /* Media queries - Responsive timeline on screens less than 600px wide */
@@ -208,7 +237,7 @@ body {
   /* Full-width containers */
   .container {
     width: 100%;
-    padding-left: 70px;
+    padding-left: 100px;
     padding-right: 25px;
   }
 
@@ -230,4 +259,17 @@ body {
   .right {
     left: 0%;
   }
+}
+
+.tooltip {
+  position: fixed;
+  display: none;
+  padding: 8px 10px;
+  background: rgba(0, 0, 0, 0.85);
+  color: #fff;
+  font-size: 12px;
+  border-radius: 8px;
+  pointer-events: none; /* so it doesn't block hovering */
+  z-index: 9999;
+  max-width: 260px;
 }
